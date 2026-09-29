@@ -1,0 +1,27 @@
+# ===== 密钥 / 运行态（绝不入库）=====
+# ownerToken、publicBaseUrl 等敏感配置都在 ~/.devspace/（仓库之外），
+# 这里列上是为了防止有人把 devspace 装在仓库内时误提交。
+auth.json
+config.json
+.devspace/
+.devspace-host/
+
+# 当前隧道 URL、运行日志（机器相关、易变）
+last-tunnel-url.txt
+start-all.log
+serve.log
+*.log
+
+# 截图产物等
+*.png
+
+# 本地 AI 记忆（可能含 token 字面量，不要入库）
+.workbuddy/
+
+# 依赖
+node_modules/
+
+# 系统垃圾
+Thumbs.db
+Desktop.ini
+.DS_Store
